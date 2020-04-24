@@ -1,0 +1,19 @@
+{
+  "name": "accounting-system",
+  "version": "1.0.0",
+  "description": "A money accounting system",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "client-start": "cd client && npm start",
+    "api-install": "cd api && npm install",
+    "api-start": "cd api && npm start",
+    "install": "concurrently \"npm run api-install\" \"npm run client-install\"",
+    "start": "concurrently \"npm run api-start\" \"npm run client-start\""
+  },
+  "author": "andres.dicamillo@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.1.0"
+  }
+}
